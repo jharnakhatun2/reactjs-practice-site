@@ -1,0 +1,25 @@
+.all-browsers{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.blog{
+ background-color: rgb(243, 207, 207);
+padding: 2em;
+
+}
+.imageStyle{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+@media (min-width: 600px) {
+    .all-browsers { grid-template-columns: repeat(2, 1fr); }
+    
+  }
+  @media (min-width: 900px) {
+    .all-browsers { grid-template-columns: repeat(3, 1fr); }
+  }

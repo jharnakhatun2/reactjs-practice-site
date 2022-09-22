@@ -1,0 +1,22 @@
+.todoListContainer{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 2rem;
+}
+.singleTodoList{
+    background-color: aquamarine;
+    text-align: left;
+    padding: 2rem;
+    font-family: "Helvetica Neue",Helvetica;
+    box-shadow: 5px 10px 10px #559778;
+}
+@media (min-width: 600px) {
+    .todoListContainer { grid-template-columns: repeat(2, 1fr); }
+    
+  }
+  @media (min-width: 900px) {
+    .todoListContainer{ grid-template-columns: repeat(3, 1fr); }
+  }
